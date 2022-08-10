@@ -32,7 +32,7 @@ class RecentStamps:
         """Returns stored ID of profile."""
         try:
             return self.data.getint(profile_name, self.PROFILE_ID)
-        except (configparser.Error, ValueError):
+        except ( ) 
             return None
 
     def save_profile_id(self, profile_name: str, profile_id: int):
